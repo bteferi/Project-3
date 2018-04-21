@@ -7,9 +7,9 @@ import { Col, Row, Container } from "../../components/Grid";
 import { List, ListItem } from "../../components/List";
 import { Input, TextArea, FormBtn } from "../../components/Form";
 
-class Books extends Component {
+class Jornals extends Component {
   state = {
-    books: [],
+    jornals: [],
     title: "",
     author: "",
     Journals: ""
@@ -22,7 +22,7 @@ class Books extends Component {
   loadBooks = () => {
     API.getBooks()
       .then(res =>
-        this.setState({ books: res.data, title: "", author: "", Journals: "" })
+        this.setState({ jornals: res.data, title: "", author: "", Journals: "" })
       )
       .catch(err => console.log(err));
   };
@@ -92,16 +92,16 @@ class Books extends Component {
             <Jumbotron>
               <h1>Journal Entriest</h1>
             </Jumbotron>
-            {this.state.books.length ? (
+            {this.state.jornals.length ? (
               <List>
-                {this.state.books.map(book => (
-                  <ListItem key={book._id}>
-                    <Link to={"/books/" + book._id}>
+                {this.state.jornals.map(jornal => (
+                  <ListItem key={jornal._id}>
+                    <Link to={"/jornals/" + jornal._id}>
                       <strong>
-                        {book.title} by {book.author}
+                        {jornal.title} by {jornal.author}
                       </strong>
                     </Link>
-                    <DeleteBtn onClick={() => this.deleteBook(book._id)} />
+                    <DeleteBtn onClick={() => this.deleteBook(jornal._id)} />
                   </ListItem>
                 ))}
               </List>
@@ -115,4 +115,4 @@ class Books extends Component {
   }
 }
 
-export default Books;
+export default Jornals;

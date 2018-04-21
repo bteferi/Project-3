@@ -11,7 +11,7 @@ mongoose.connect(
   }
 );
 
-const bookSeed = [
+const jornalSeeds = [
   {
     title: "My Very First Jornal Entery",
     author: "Bezawit Teferi",
@@ -21,9 +21,9 @@ const bookSeed = [
   }
 ];
 
-db.Book
+db.Jornal
   .remove({})
-  .then(() => db.Book.collection.insertMany(bookSeed))
+  .then(() => db.Jornal.collection.insertMany(jornalSeeds))
   .then(data => {
     console.log(data.insertedIds.length + " records inserted!");
     process.exit(0);
