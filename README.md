@@ -1,6 +1,7 @@
 
 ## File Structure
 
+```
 ├───client
 │   ├───public
 │   └───src
@@ -39,3 +40,5 @@
 ├── README.md
 ├── server.js
 └── yarn.lock
+
+```
