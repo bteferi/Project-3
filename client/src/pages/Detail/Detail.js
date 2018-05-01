@@ -8,10 +8,10 @@ class Detail extends Component {
   state = {
     jornal: {}
   };
-  // When this component mounts, grab the book with the _id of this.props.match.params.id
-  // e.g. localhost:3000/books/599dcb67f0f16317844583fc
+  // When this component mounts, grab the Journal with the _id of this.props.match.params.id
+  // e.g. localhost:3000/journals/599dcb67f0f16317844583fc
   componentDidMount() {
-    API.getBook(this.props.match.params.id)
+    API.getJournal(this.props.match.params.id)
       .then(res => this.setState({ jornal: res.data }))
       .catch(err => console.log(err));
   }

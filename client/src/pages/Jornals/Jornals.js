@@ -16,20 +16,20 @@ class Jornals extends Component {
   };
 
   componentDidMount() {
-    this.loadBooks();
+    this.loadJournals();
   }
 
-  loadBooks = () => {
-    API.getBooks()
+  loadJournals = () => {
+    API.getJournals()
       .then(res =>
         this.setState({ jornals: res.data, title: "", author: "", Journals: "" })
       )
       .catch(err => console.log(err));
   };
 
-  deleteBook = id => {
-    API.deleteBook(id)
-      .then(res => this.loadBooks())
+  deleteJournal = id => {
+    API.deleteJournal(id)
+      .then(res => this.loadJournals())
       .catch(err => console.log(err));
   };
 
@@ -43,12 +43,12 @@ class Jornals extends Component {
   handleFormSubmit = event => {
     event.preventDefault();
     if (this.state.title && this.state.author) {
-      API.saveBook({
+      API.saveJournal({
         title: this.state.title,
         author: this.state.author,
         Journals: this.state.Journals
       })
-        .then(res => this.loadBooks())
+        .then(res => this.loadJournals())
         .catch(err => console.log(err));
     }
   };
@@ -101,7 +101,7 @@ class Jornals extends Component {
                         {jornal.title} by {jornal.author}
                       </strong>
                     </Link>
-                    <DeleteBtn onClick={() => this.deleteBook(jornal._id)} />
+                    <DeleteBtn onClick={() => this.deleteJournal(jornal._id)} />
                   </ListItem>
                 ))}
               </List>
