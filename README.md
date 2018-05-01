@@ -2,8 +2,8 @@
 
 ### A FREE place to record your thoughts, feelings and ideas.You can use it as frequently or infrequently as you would like. This is your space to write down whatever is on your mind. You have the power to edit and delete the thoughts ones you have created it.
 
-## “Write down the thoughts of the moment. Those that come unsought for are commonly the most valuable.”
-  - Francis Bacon, Sr.
+## “Write down the thoughts of the moment. Those that come unsought for are commonly the most valuable. ”   - Francis Bacon, Sr.
+
 
 
 
