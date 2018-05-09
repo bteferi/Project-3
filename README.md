@@ -93,6 +93,6 @@
 ##Getting Started
 go to Journal
 
-#created by :
+#created by : Bezawit Teferi
 ## Create & Mutate
 [Bezawit](https://github.com/bteferi)  
