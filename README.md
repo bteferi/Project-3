@@ -57,7 +57,6 @@
 - :link:Body-parser
 - :link:bcrypt-nodejs
 - :link: mongoose
--  :link: axios
 
 ## Key Features
 ##Blog
@@ -81,7 +80,9 @@
 - CSS
 
 
-Mockup pictures go here...
+
+![Illustration](demo.gif)
+
 
 ##API Docs
 - get
