@@ -90,7 +90,7 @@ class Jornals extends Component {
           </Col>
           <Col size="md-12">
             <Jumbotron>
-              <h1>Journal Entriest</h1>
+              <h1>Journal Entries</h1>
             </Jumbotron>
             {this.state.jornals.length ? (
               <List>
